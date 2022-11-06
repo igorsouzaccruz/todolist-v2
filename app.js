@@ -14,7 +14,7 @@ app.use(express.static("public"));
 main().catch(err => console.log(err));
  
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/toDoListDB');
+  await mongoose.connect('mongodb+srv://admin-igor:teste01@cluster0.z1pllb0.mongodb.net/toDoListDB');
 }
 
 const itemsSchema = {
